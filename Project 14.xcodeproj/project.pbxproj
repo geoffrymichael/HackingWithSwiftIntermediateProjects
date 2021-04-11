@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		632FA70B2623C04A005FB7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FA70A2623C04A005FB7B0 /* AppDelegate.swift */; };
 		632FA70D2623C04A005FB7B0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 632FA70C2623C04A005FB7B0 /* GameScene.sks */; };
-		632FA70F2623C04A005FB7B0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 632FA70E2623C04A005FB7B0 /* Actions.sks */; };
 		632FA7112623C04A005FB7B0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FA7102623C04A005FB7B0 /* GameScene.swift */; };
 		632FA7132623C04A005FB7B0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FA7122623C04A005FB7B0 /* GameViewController.swift */; };
 		632FA7162623C04A005FB7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FA7142623C04A005FB7B0 /* Main.storyboard */; };
 		632FA7182623C04A005FB7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FA7172623C04A005FB7B0 /* Assets.xcassets */; };
+		632FA7232623C252005FB7B0 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = 632FA7212623C252005FB7B0 /* whackBad.caf */; };
+		632FA7242623C252005FB7B0 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 632FA7222623C252005FB7B0 /* whack.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		632FA7072623C04A005FB7B0 /* Project 14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FA70A2623C04A005FB7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632FA70C2623C04A005FB7B0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		632FA70E2623C04A005FB7B0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		632FA7102623C04A005FB7B0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		632FA7122623C04A005FB7B0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		632FA7152623C04A005FB7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632FA7172623C04A005FB7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632FA7192623C04A005FB7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632FA7212623C252005FB7B0 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		632FA7222623C252005FB7B0 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,12 @@
 			children = (
 				632FA70A2623C04A005FB7B0 /* AppDelegate.swift */,
 				632FA70C2623C04A005FB7B0 /* GameScene.sks */,
-				632FA70E2623C04A005FB7B0 /* Actions.sks */,
 				632FA7102623C04A005FB7B0 /* GameScene.swift */,
 				632FA7122623C04A005FB7B0 /* GameViewController.swift */,
 				632FA7142623C04A005FB7B0 /* Main.storyboard */,
 				632FA7172623C04A005FB7B0 /* Assets.xcassets */,
+				632FA7222623C252005FB7B0 /* whack.caf */,
+				632FA7212623C252005FB7B0 /* whackBad.caf */,
 				632FA7192623C04A005FB7B0 /* Info.plist */,
 			);
 			path = "Project 14";
@@ -128,9 +131,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				632FA7162623C04A005FB7B0 /* Main.storyboard in Resources */,
+				632FA7242623C252005FB7B0 /* whack.caf in Resources */,
+				632FA7232623C252005FB7B0 /* whackBad.caf in Resources */,
 				632FA70D2623C04A005FB7B0 /* GameScene.sks in Resources */,
 				632FA7182623C04A005FB7B0 /* Assets.xcassets in Resources */,
-				632FA70F2623C04A005FB7B0 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
