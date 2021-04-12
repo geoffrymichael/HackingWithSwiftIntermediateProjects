@@ -13,6 +13,8 @@ class GameScene: SKScene {
     
     var popupTime = 0.85
     
+    var numRounds = 0
+    
     var score = 0 {
         didSet {
             gameScore.text = "Score \(score)"
@@ -52,6 +54,38 @@ class GameScene: SKScene {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        
+        let location = touch.location(in: self)
+        let tappedNodes = nodes(at: location)
+        
+        for node in tappedNodes {
+            //dig down the parent tree to get the whack slot, and otherwise move on to next touch
+            guard let whackSlot = node.parent?.parent as? WhackSlot else { continue }
+            
+            if !whackSlot.isVisible { continue }
+            if whackSlot.isHit { continue }
+            
+            whackSlot.hit()
+            
+            if node.name == "charFriend" {
+                //Consequence for hitting wrong penguin
+                
+                score -= 5
+                
+                run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: false))
+            } else if node.name == "charEnemy" {
+                //Correct penguin was hit
+                
+                //visibly shrink the sprite if it is hit
+                whackSlot.charNode.xScale = 0.85
+                whackSlot.charNode.yScale = 0.85
+                
+                score += 1
+                
+                run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false))
+            }
+        }
     }
     
     func createSlot(at position: CGPoint) {
@@ -62,6 +96,21 @@ class GameScene: SKScene {
     }
     
     func createEnemy() {
+        //End game after 30 rounds
+        numRounds += 1
+        if numRounds >= 30 {
+            for slot in slots {
+                slot.hide()
+            }
+
+            let gameOver = SKSpriteNode(imageNamed: "gameOver")
+            gameOver.position = CGPoint(x: 512, y: 384)
+            gameOver.zPosition = 1
+            addChild(gameOver)
+
+            return
+        }
+        
         popupTime *= 0.991
 
         slots.shuffle()
