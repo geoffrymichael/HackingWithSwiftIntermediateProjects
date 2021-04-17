@@ -14,7 +14,7 @@
 		632FA790262B824D005FB7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FA78E262B824D005FB7B0 /* Main.storyboard */; };
 		632FA792262B824E005FB7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FA791262B824E005FB7B0 /* Assets.xcassets */; };
 		632FA79C262B82CA005FB7B0 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 632FA79A262B82CA005FB7B0 /* starfield.sks */; };
-		632FA79D262B82CA005FB7B0 /* hammer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 632FA79B262B82CA005FB7B0 /* hammer@2x.png */; };
+		632FA7A2262B926D005FB7B0 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 632FA7A1262B926D005FB7B0 /* explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		632FA791262B824E005FB7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632FA793262B824E005FB7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632FA79A262B82CA005FB7B0 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
-		632FA79B262B82CA005FB7B0 /* hammer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hammer@2x.png"; sourceTree = "<group>"; };
+		632FA7A1262B926D005FB7B0 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 				632FA78E262B824D005FB7B0 /* Main.storyboard */,
 				632FA791262B824E005FB7B0 /* Assets.xcassets */,
 				632FA793262B824E005FB7B0 /* Info.plist */,
-				632FA79B262B82CA005FB7B0 /* hammer@2x.png */,
 				632FA79A262B82CA005FB7B0 /* starfield.sks */,
+				632FA7A1262B926D005FB7B0 /* explosion.sks */,
 			);
 			path = "Project 17";
 			sourceTree = "<group>";
@@ -130,10 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632FA79D262B82CA005FB7B0 /* hammer@2x.png in Resources */,
 				632FA790262B824D005FB7B0 /* Main.storyboard in Resources */,
 				632FA787262B824D005FB7B0 /* GameScene.sks in Resources */,
 				632FA792262B824E005FB7B0 /* Assets.xcassets in Resources */,
+				632FA7A2262B926D005FB7B0 /* explosion.sks in Resources */,
 				632FA79C262B82CA005FB7B0 /* starfield.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
