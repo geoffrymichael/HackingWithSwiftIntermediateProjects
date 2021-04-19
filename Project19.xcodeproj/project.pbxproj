@@ -17,6 +17,7 @@
 		6398E506262E24BC00F18C98 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6398E505262E24BC00F18C98 /* ActionViewController.swift */; };
 		6398E509262E24BC00F18C98 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6398E507262E24BC00F18C98 /* MainInterface.storyboard */; };
 		6398E50D262E24BC00F18C98 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6398E501262E24BC00F18C98 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6398E515262E2B5700F18C98 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 6398E514262E2B5700F18C98 /* Action.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6398E505262E24BC00F18C98 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		6398E508262E24BC00F18C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6398E50A262E24BC00F18C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6398E514262E2B5700F18C98 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				6398E505262E24BC00F18C98 /* ActionViewController.swift */,
 				6398E507262E24BC00F18C98 /* MainInterface.storyboard */,
 				6398E50A262E24BC00F18C98 /* Info.plist */,
+				6398E514262E2B5700F18C98 /* Action.js */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6398E515262E2B5700F18C98 /* Action.js in Resources */,
 				6398E504262E24BC00F18C98 /* Media.xcassets in Resources */,
 				6398E509262E24BC00F18C98 /* MainInterface.storyboard in Resources */,
 			);
